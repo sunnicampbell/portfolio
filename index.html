@@ -1,42 +1,113 @@
-<!DOCTYPE htmml>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-    <title>Sunni Campbell | Photography | Writing</title>
+    <title>Sunni Campbell | Photos and Digital Ninja Skills </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="photos and writing">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="sunni campbell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    img {
-      border-radius: 3px;
-      padding: 25px;
-      width: 250px;
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            background-image: url(images/backgroundimage.png);
         }
-  </style>    
+        h1, h2, h3 {
+            color: #006699;
+        }
+        img {
+            border-radius: 3px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            width: 250px;
+            float: left;
+            margin: 0;
+            }
+        ul {
+            list-style: none;
+            }
+        header { 
+            text-align: center;
+            }
+        #menubar
+            { 
+            width: 910px;
+            height: 95px;
+            padding: 0;
+            background: url(images/menubar.png) repeat;
+            margin-left: auto;
+            margin-right: auto;
+            } 
+        #sitecontent
+            { 
+            width: 849px;
+            height: auto;
+            overflow: hidden;
+            margin: 0 auto 0 auto;
+            padding: 10px 24px 100px 37px;
+            background: url(images/background.png);
+            }
+        footer
+            { 
+            width: 910px;
+            font: normal 100% 'arial', sans-serif;
+            height: 45px;
+            padding: 28px 0 5px 0;
+            text-align: center; 
+            background: url(images/menubar.png) repeat;
+            color: #FFF;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        #brand {
+            font: normal 300% sans-serif;
+            border-bottom: 0px;
+            text-transform: none;
+            margin: 20px;
+            padding: 25px 0 0 0;
+            color: #B22222;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+        }
+    </style>    
     </head>
     <body>
-    <h1>Digital Marketing Consultant and Photo Hobbyist</h1>
-        
-         <div id="menubar">
-             <nav>
+    <header>   
+    <h2 id="brand">Sunni Campbell</h2> 
+             <nav id="menubar">
               <a href="index.html">Home</a>
-              <a href="#">Gallery</a>
-              <a href="#"> Words</a>
+              <a href="projects.html">Projects</a>
+              <a href="#"> Gallery</a>
               <a href="#"> About</a>
               <a href="#">Get In Touch</a>
              </nav>
-        </div>     
+     </header>
+        <section id="sitecontent">
+        <h1>Photos and Writing</h1>    
         <p>I thrive in the intersection of media, culture and technology. I help individuals, small businesses and non-profits develop the strategy they need for a successful online presence.</p>
-        <div class="profileimage">
-        <img style="float:left" padding="20px" src="../images/sunni-bio.jpg"> 
-        </div>
-            <div class="box"> 
+           
+        <figure class="profileimage">
+        <img src="images/sunni-bio.jpg" alt="sunni pic">
+        </figure>
+            
+            <article class="box"> 
                 <H3>What I Do:</H3>
-                
+                <ul>
                 <li>Digital Strategy</li>
                 <li>Search Engine Optimization</li>
-               <li>A/B Testing</li> 
+                <li>A/B Testing</li> 
                 <li>Content Development</li>
-                
+                </ul>
                 <H3>Dabbling in:</H3>
             
             <p>Street photography, learning to code, traveling, editing GoPro videos, enjoying good espresso and fine bourbon.</p>
-            </div>
+            </article>
+         </section>     
+        <footer>
+        &copy; Copyright 2018 Sunni Campbell | Photos and Digital Ninja Skills 
+        </footer>
     </body>        
 </html>
